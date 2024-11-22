@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- 페이지의 언어가 한국어임을 나타냄-->
+  <head> <!-- 페이지의 정보 -->
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 메모 목록</title>
+    <link rel="stylesheet" href="list.css" /> 
+  </head>
+  <body> <!-- 페이지의 내용 -->
+    <div class="container"> 
+      <h1>나의 메모 목록</h1>
+
+      <!-- 검색 창 -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="메모 검색" />
+        <button id="searchBtn">검색하기</button>
+      </div>
+
+      <!-- 메모 목록 -->
+      <table>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>최근 날짜</th>
+            <th>수정</th>
+            <th>삭제</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 예시 메모 목록 -->
+          <tr>
+            <td>1</td>
+            <td>첫 번째 메모</td>
+            <td>2024-09-25 13:00:00</td>
+            <td>
+              <button class="edit-btn" onclick="location.href='edit-memo.html'">
+                수정
+              </button>
+            </td>
+            <td><button class="delete-btn">삭제</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>두 번째 메모</td>
+            <td>2024-09-25 13:00:00</td>
+            <td>
+              <button class="edit-btn" onclick="location.href='edit-memo.html'">
+                수정
+              </button>
+            </td>
+            <td><button class="delete-btn">삭제</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <button id="addMemoBtn" onclick="location.href='new-memo.html'">
+        작성하기
+      </button>
+    </div>
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="delete.js"></script>
+  </body>
+</html>
+
